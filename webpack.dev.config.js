@@ -1,5 +1,4 @@
 const path = require("path");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const webpack = require('webpack');
 
 module.exports = {
@@ -14,15 +13,7 @@ module.exports = {
     target: 'web',
     devtool: 'source-map',
     // Webpack 5 will likely come with one
-    optimization: {
-        minimizer: [
-            new UglifyJsPlugin({
-                cache: true,
-                parallel: true,
-                sourceMap: true // set to true if you want JS source maps
-            })
-        ]
-    },
+    optimization: {},
     module: {
         rules: [
             {
