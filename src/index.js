@@ -1,3 +1,4 @@
+import 'express-async-errors';
 
 // Needed for Hot Module Replacement
 if(typeof(module.hot) !== 'undefined') {
